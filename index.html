@@ -1,32 +1,41 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Telegram Redirect</title>
-    <script>
-        window.onload = function() {
-            var urls = [
-                "https://t.me/PHOENIX999AGENTSTAR",
-                "https://t.me/Dhalia154",
-                "https://t.me/mizabela567",
-                "https://t.me/yourfarah20",
-                "https://t.me/ivanadarwish03",
-                "https://t.me/itsxxnn",
-                "https://t.me/MASKTea",
-                "https://t.me/Easta002",
-                "https://t.me/freyachetria1",
-                "https://t.me/saachi2777",
-                "https://t.me/khisp07",
-                "https://t.me/abgl999",
-                "https://t.me/rrlk07",
-            ];
-            var randomIndex = Math.floor(Math.random() * urls.length);
-            var randomURL = urls[randomIndex];
-            window.location.href = randomURL;
-        };
-    </script>
+  <title>Random Telegram Redirect</title>
 </head>
 <body>
-    <h1>Redirecting to Random Telegram...</h1>
+  <script>
+    function openTelegramApp() {
+      // List of random Telegram usernames
+      var telegramUsernames = [
+        "Darumalavika",
+        "PxMgabriella",
+        "Kartikkapoor0502",
+        "Your_Anastasia3Ms",
+        "saachi2777",
+        "Abhies11",
+        "Freyachetria",
+        "Tiffany010121",
+        "haileypx999",
+        "VanshikaKapoor2",
+        "rrlk07",
+        "abgl999",
+        "khisp07",
+        "itsbaratime",
+        "yourfarah20",
+        "ivanadarwish03",
+        "AllaniPhoenix999",
+        "PHOENIX999AGENTSTAR",
+        "AdChalla"
+        // Add more random Telegram usernames here
+      ];
+
+      // Get a random index
+      var randomIndex = Math.floor(Math.random() * telegramUsernames.length);
+
+      // Open the Telegram app with the resolved username
+      window.location.href = "tg://resolve?domain=" + telegramUsernames[randomIndex];
+    }
+  </script>
 </body>
 </html>
